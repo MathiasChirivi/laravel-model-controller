@@ -5,7 +5,8 @@
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
             @foreach ($movies as $movie)
             <div class="col">
-                <div class="card p-3" style="width: 15rem; height: 18rem">
+                <div class="card p-3" style="width: 15rem; height: 35rem">
+                    <img src="{{ $movie->image }}" style="height: 279px" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h4 class=""> {{ $movie->original_title }} </h4>
                         <p class="d-flex flex-column flex-nowrap"><strong>Nazionality movies:</strong> {{ $movie->nationality }} </p>
